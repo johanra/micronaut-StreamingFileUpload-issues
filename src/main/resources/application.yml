@@ -1,0 +1,13 @@
+micronaut:
+  object-storage:
+    azure:
+      tenant1:
+        container: tenant1
+        endpoint: https://<account-name-here>.blob.core.windows.net
+    local:
+      default:
+        enabled: false
+azure:
+  credential:
+    storage-shared-key:
+      connection-string: DefaultEndpointsProtocol=https;AccountName=<account-name-here>;AccountKey=<account-key-here>;EndpointSuffix=core.windows.net
